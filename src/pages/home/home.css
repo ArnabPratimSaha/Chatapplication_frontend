@@ -1,0 +1,43 @@
+.homepage-main-div
+{
+    
+}
+#div
+{
+    
+    background-repeat: no-repeat;
+    background-attachment:fixed ;  
+    background-size: cover;
+    animation: imageanim 20s linear infinite;
+}
+@media only screen and (max-width: 600px) {
+    #div
+    {
+        background-image: url(./images/chatimg.jpg);
+        background-repeat: no-repeat;
+        background-attachment:fixed ;   
+        background-size:cover;
+        background-position: 50% 50%;
+        
+    }
+}
+
+@keyframes imageanim
+{
+    0%
+    {
+        background-image: url(./images/img3.jpg);
+    }
+    25%{
+        background-image: url(./images/img4.jpg);
+    }
+    50%{
+        background-image: url(./images/img5.jpg);
+    }
+    75%{
+        background-image: url(./images/img7.jpg);
+    }
+    100%{
+        background-image: url(./images/img3.jpg);
+    }
+}

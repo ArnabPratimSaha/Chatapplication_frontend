@@ -1,0 +1,4 @@
+.carousel-inner img:nth-child(1)
+{
+    src: url("./images/img1.jpg");
+}

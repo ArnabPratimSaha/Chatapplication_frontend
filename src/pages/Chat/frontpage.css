@@ -1,0 +1,230 @@
+.frontpage-main-div
+{
+    text-align: center;
+}
+.weather-div-main
+{
+    background-image: url("./images/backgroundimg-2.jpg");
+    height: 36rem;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;   
+    background-size:cover;
+    background-position: 50% 50%;
+
+}
+.weather-updates
+{
+    position: absolute;
+    height: 7rem;
+    top: 29rem;
+    width: 100%;
+    background-image: linear-gradient(to top , #78e4ff ,#ff48f900);
+}
+
+.cloudy-day
+{
+    background-image: url(./images/cloudy_day.jpg);
+    transition: all 5s;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;   
+    background-size:cover;
+    background-position: 50% 50%;
+}
+.cloudy-night
+{
+    background-image: url(./images/cloudy_night.jpg);
+    transition: all 5s;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;   
+    background-size:cover;
+    background-position: 50% 100%;
+}
+.rainy-day
+{
+    background-image: url(./images/rainy-day.jpg);
+    transition: all 5s;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;   
+    background-size:cover;
+    background-position: 50% 50%;
+}
+.rainy-night
+{
+    background-image: url(./images/rainy_night.jpg);
+    transition: all 5s;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;   
+    background-size:cover;
+    background-position: 50% 50%;
+}
+.snowy-day
+{
+    background-image: url(./images/snowy_day_2.jpg);
+    transition: all 5s;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;   
+    background-size:cover;
+    background-position: 50% 50%;
+}
+.snowy-night
+{
+    background-image: url(./images/snowy_night.jpg);
+    transition: all 5s;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;   
+    background-size:cover;
+    background-position: 50% 50%;
+}
+.clear-night
+{
+    background-image: url(./images/clear-night.jpg);
+    transition: all 5s;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;   
+    background-size:cover;
+    background-position: 50% 50%;
+}
+.clear-day
+{
+    background-image: url(./images/sunny-day.jpg);
+    transition: all 5s;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;   
+    background-size:cover;
+    background-position: 50% 50%;
+}
+.col-frontpage
+{
+    padding-top: 2rem;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+@media only screen and (max-width: 600px) {
+    .col-frontpage
+    {
+        padding-top: 0rem;
+        font-size: .1rem;
+    }
+}
+.fun-fact
+{
+    text-align: center;
+    top: 30%;
+    color: burlywood;
+    padding-top: 10rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+}
+.col-frontpage i
+{
+    font-size: 2rem !important;
+}
+.button-frontpage{
+    width: 7rem;
+    height: 2.5rem;
+    background: transparent;
+    border-radius: 3rem;
+    border: 1.3px solid;
+    color: rgb(255, 255, 255);
+    margin-left: .8rem;
+    margin-top: 1rem;
+}
+.button-frontpage:hover
+{
+    background: #ffffff9f;
+    border-color: rgba(1, 1, 3, 0);
+    width:12rem;
+    transition: width .5s;
+}
+.findfriend-button-handler
+{
+    height: 17rem;
+    background-image: linear-gradient(to right bottom,#ff48fa,#78e4ff);
+}
+.findfriend-button-handler h1
+{
+    padding-top: 3rem;
+    color: #fff !important;
+    font-size: 3rem;
+
+}
+.findfriend-button-handler h3
+{
+    padding-top: 1rem;
+    color: #fff !important;
+    font-size: 2rem;
+}
+.chatfront-chat-list
+{
+    height: 60rem;
+    width: 100%;
+    background-image: url("./images/background-images.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10rem;
+}
+.chatfront-chat-list h1
+{
+    color: #fff;
+    font-size: 2em;
+}
+.chat-container
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.chatfront-chatbox
+{
+    position: relative;
+    right: 15rem;
+}
+.chatfront-names-div
+{
+    height: 36rem; /*ui css ui-wrapper*/
+    text-align: center;
+}
+
+.chatfront-names
+{
+    width: 17em;
+    margin: 0 auto;
+    height: 92%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+.chatfront-names::-webkit-scrollbar
+{
+    width: 0;
+}
+.chatfront-names-div-h1
+{
+    padding: 0;
+    margin: 0 auto;
+    width: 16em;
+    border: 2px solid #fff;
+    border-radius: 15px; 
+}
+
+@media only screen and (max-width: 1300px) {
+    .chatfront-chatbox
+    {
+        position: static;
+    }
+    .chatfront-names
+    {
+        height: 60%;
+        
+    }
+    .chatfront-names-div
+    {
+        height: 20rem;
+    }
+    .chatfront-chat-list
+    {
+        height: 69rem;
+    }
+}

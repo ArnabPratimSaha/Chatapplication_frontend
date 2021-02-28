@@ -1,0 +1,119 @@
+
+.friendreq-infodiv
+{
+    width: 100%;
+    background-image: url("./images/image-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 8rem;
+    text-align: center;
+    padding-bottom: 5rem;
+    height: 50rem;
+}
+@media only screen and (max-width: 900px) {
+    .friendreq-infodiv{
+        height: 70rem;
+    }
+    .friendreq-searchdiv-search-result
+    {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}
+.friendreq-searchdiv-search-result
+{
+    height: 15rem;
+    width: 50%;
+    text-align: center;
+    overflow-y: scroll;
+    margin: 2em auto;
+}
+.friendreq-rec-div
+{
+    width: 30%;
+    padding-top: 4rem;
+    
+}
+.friendreq-send-div
+{
+    width: 30%;
+    padding-top: 4rem; 
+}
+.friendreq-searchdiv
+{
+    width: 100%;
+    height: 60rem;
+    text-align: center;
+    background-image: url("./images/image-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.friendreq-searchdiv-search
+{
+    background: transparent;
+}
+.friendreq-searchdiv-search h1
+{
+    padding-top: 15rem;
+    padding-bottom: 4rem;
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Kaushan Script', cursive;
+}
+.friendreq-searchdiv-search input
+{
+    width: 60%;
+    text-align: center;
+    height: 3.5em;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+}
+.friendreq-searchdiv-search input:focus
+{
+    outline-width: 0;
+}
+.friendreq-searchdiv-search input::placeholder
+{
+    color: #fff;
+}
+.friendreq-searchdiv-search button
+{
+    margin-top: 2em;
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    width: 6em;
+    font-size: 2em;
+}
+.friendreq-searchdiv-search button:hover
+{
+    width: 7em;
+    transition: all .4s;
+}
+
+
+.friendreq-searchdiv-h6
+{
+    color: #fff;
+    padding-top: 1em;
+    font-size: 2em;
+}
+.friendreq-searchdiv-search-result::-webkit-scrollbar
+{
+    width: 0;
+}
+.friendreqsent-response
+{
+    color: black !important;
+    text-align: right;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: -4px;
+}

@@ -1,0 +1,103 @@
+.footer-logos
+{
+    padding: 2rem;
+}
+.footer-maindiv
+{
+    text-align: center;
+}
+.footer-logos i
+{
+    font-size: 4em;
+    margin: 0 3rem;
+}
+.footer-logos img
+{
+    width: 4em;
+    position: relative;
+    top: -1.5rem;
+}
+.fa-html5
+{
+    color: rgb(0, 44, 139) !important;
+}
+.fa-css3-alt
+{
+    color: rgb(255, 0, 43) !important;
+}
+.fa-bootstrap
+{
+    color:rebeccapurple !important;
+}
+.fa-node
+{
+    color: rgb(12, 59, 0);
+}
+.fa-react
+{
+    color: skyblue;
+}
+.fa-js-square
+{
+    color: gray;
+}
+.fa-heart
+{
+    color: hotpink;
+}
+.footer-topdiv h1
+{
+    font-family: 'Dancing Script', cursive;
+}
+.footer-middlediv
+{
+    padding: 1em;
+    background: linear-gradient(to top ,#78e4ff ,#ff48fa);
+}
+.footer-middlediv h6
+{
+    font-size: 1rem;
+    color: #fff;  
+}
+.footer-middlediv a
+{
+    margin: 0 2rem;
+    font-size: 2rem;
+    color: #fff !important;
+}
+.footer-bottomdiv 
+{
+    background-color: black;
+}
+
+
+@media screen and (max-width: 992px) {
+    .footer-logos i
+    {
+        font-size: 1.5em;
+        margin: 0 .5rem;
+    }
+    .footer-logos img
+    {
+        width: 1.5em;
+        position: relative;
+        top: -10px;
+    }
+    .footer-topdiv h1
+    {
+        font-size: 2rem;
+        font-family: 'Dancing Script', cursive;
+    }
+    .footer-middlediv a
+    {
+        margin: 10px;
+        font-size: 1rem;
+        color: #fff !important;
+    }
+    .footer-middlediv h6
+    {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: #fff;  
+    }
+}

@@ -1,0 +1,21 @@
+
+.namebutton-buttons button
+{
+    width: 15em;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 10px;
+    color: #fff;
+}
+.namebutton-buttons button:hover
+{
+    width: 16em;
+    border: 3px solid #fff;
+    transition: all .4s;
+}
+.chat-button-active
+{
+    width: 16em !important;
+    border: 3px solid #fff !important;
+    background-color: rgba(87, 87, 87, 0.514) !important;
+}

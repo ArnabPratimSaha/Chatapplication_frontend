@@ -1,0 +1,27 @@
+
+.friendreqsend-title
+{
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 1em;
+    border-radius: 20px;
+}
+.friendreqsend-title h6
+{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.friendreqsend-content
+{
+    height: 15rem;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 1em;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+.friendreqsend-content h6
+{
+    color: #fff !important;
+}

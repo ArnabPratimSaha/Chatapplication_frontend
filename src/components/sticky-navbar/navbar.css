@@ -1,0 +1,287 @@
+.blur
+{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.navbar-div-1
+{
+    width: 100%;
+    height: 6em;
+    background: linear-gradient(to bottom,#ff48fa,#ff48f900);
+    position:fixed;
+    padding: 0;
+    z-index: 2;
+    padding: 1.5em 0;
+    transition: all .4s;
+    z-index: 5;
+    filter: blur(0) !important;
+    -webkit-filter: blur(0) !important;
+}
+.navbar-sticky
+{
+    height: 4em;
+    padding: 0;
+    background: none;
+    background-color: black;
+    padding-top: 1em;
+    transition: all .4s;
+}
+.navbar-sticky .navbar-button-div h6
+{
+    color: #fff;
+}
+.navbar-sticky i
+{
+    color: #fff !important;
+    padding: 0;
+    top: 20% !important;
+    bottom: 0;
+    cursor: pointer;
+    
+}
+.navbar-sticky i:hover
+{
+    color: rgb(194, 194, 194) !important;
+}
+.navbar-div-1 i
+{
+    font-size: 2rem;
+    position: absolute;
+    left: 7%;
+    top: 1em;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.navbar-div-1 a
+{
+    font-size: 2.3em;
+    position: absolute;
+    top: .5em;
+    left: 10%;
+    right: auto;
+    display: inline-flex;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: #fff !important;
+}
+.navbar-sticky a
+{
+    position: absolute;
+    top: 0;
+    color: #fff !important;
+    transition: all .4s;
+}
+.navbar-div-1 a:hover
+{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.navbar-button-div
+{
+    position: absolute;
+    right: 10%;
+    left: auto;
+    padding: 0;
+}
+.navbar-button-div h6
+{
+    display: inline-flex;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fff !important;
+    position: relative;
+    top: 9px;
+}
+.navbar-button{
+    width: 5rem;
+    height: 2.5rem;
+    background: transparent;
+    border-radius: 3rem;
+    border: 2px solid;
+    color: rgb(255, 255, 255);
+    /* border-color: rgb(255, 255, 255); */
+    margin-left: .8rem;
+    opacity: 3;
+    
+}
+.navbar-button:hover
+{
+    color: black;
+    background: #ffffff9f;
+    border-color: rgb(1, 1, 3);
+    width:5.5rem;
+    transition: width .5s;
+}
+.navbar-idle
+{
+    position: fixed;
+    z-index: 1;
+    height: 85%;
+    top: 9.5%;
+    width: 20%;
+    background:transparent;
+    left: -20%;
+    background-color: rgba(128, 128, 128, 0.432);
+    transition: all .4s;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.navbar-slider
+{
+    position: fixed;
+    left: 0;
+    top: 9.5%;
+    z-index: 1;
+    height: 85%;
+    width: 20%;
+    background-color: rgba(128, 128, 128, 0.432);
+    transition: all .4s;
+    text-align: center;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    filter: blur(0) !important;
+    -webkit-filter: blur(0) !important;
+    
+}
+.navbar-buttons-1
+{
+    position: absolute;
+    width: 70%;
+    top: 30%;
+    left: 10%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+.navbar-buttons-1 button
+{
+    position: relative;
+    width: 80%;
+}
+.navbar-buttons-1 button:hover
+{
+    width: 90%;
+}
+.navbar-buttons-2
+{
+    position: absolute;
+    width: 70%;
+    top: 80%;
+    left: 10%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+.navbar-buttons-2 button
+{
+    position: relative;
+    width: 50%;
+}
+.navbar-buttons-2 button:hover
+{
+    width: 60%;
+}
+.navbar-dashboard
+{
+    position: relative;
+    top: 10%;
+    color: #fff;
+    font-size: 2rem;
+}
+.navbar-versioncontrol
+{
+    margin-top: 20px;
+    font-size: 10px;
+}
+@media screen and (max-width: 992px) {
+    .navbar-slider
+    {
+        top: 9.5%;
+        height: 85%;
+        width: 50%;
+    }
+    .navbar-idle
+    {
+       
+        height: 85%;
+        top: 9.5%;
+        width: 40%;
+        left: -40%;
+    }
+    .navbar-dashboard
+    {
+        font-size: 1.5rem;
+    }
+    .navbar-buttons-1 button
+    {
+        width: 90%;
+    }
+    .navbar-buttons-1 button:hover
+    {
+        width: 95%;
+    }
+    .navbar-buttons-2 button
+    {
+        position: relative;
+        width: 70%;
+    }
+    .navbar-buttons-2 button:hover
+    {
+        width: 80%;
+    }
+    .navbar-div-1 a
+    {
+        font-size: 1.5em;
+        top: 1.2em;
+        left: 3em;
+    }
+    .navbar-sticky a
+    {
+        top: .5em;
+    }
+    .navbar-button-div h6
+    {
+        font-size: .9em;
+        font-weight: 300;
+        word-wrap:break-word;
+        top: 1em;
+    }
+    .navbar-versioncontrol
+    {
+        font-size: 5px;
+    }
+}
+.navbar-active-page-button
+{
+    width: 80%;
+    height: 2.5rem;
+    background: transparent;
+    border-radius: 3rem;
+    border: 1px solid;
+    color: rgb(255, 255, 255);
+    margin-left: .8rem;
+}
+.navbar-active-page-button:hover
+{
+    width: 80% !important;
+}
+.navbar-active-page-button-bottom
+{
+    height: 2.5rem;
+    background: transparent;
+    border-radius: 3rem;
+    border: 1px solid;
+    color: rgb(255, 255, 255);
+    margin-left: .8rem;
+    width: 50%;
+}
+.navbar-active-page-button-bottom:hover
+{
+    width: 50% !important;
+}
+.navbar-button-div
+{
+    display: inline-flex;
+}

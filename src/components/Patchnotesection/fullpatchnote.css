@@ -1,0 +1,26 @@
+.fullpatch-main-div
+{
+    width: 100%;
+    height: 55rem;
+    background-image: linear-gradient(to bottom,#ff5e78,#78e4ff);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.patch-note-section
+{
+    margin: 0 4rem;
+}
+.fullpatch-main-div h1
+{
+    padding-top: 3rem;
+}
+@media only screen and (max-width: 900px) {
+    .fullpatch-main-div
+    {
+        height: 70rem;
+    }
+    .patch-note-section
+    {
+        margin: 2rem 1rem;
+    }
+}

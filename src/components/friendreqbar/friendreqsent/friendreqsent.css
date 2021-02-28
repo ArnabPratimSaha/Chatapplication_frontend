@@ -1,0 +1,32 @@
+.sentfriendreqbtn-title
+{
+    text-align: left;
+    float: left;
+}
+.sentfriendreqbtn-title h6:nth-child(1)
+{
+    color:rgb(255, 255, 255) !important;
+}
+.sentfriendreqbtn-title h6:nth-child(2)
+{
+    color:rgb(148, 148, 148) !important;
+}
+.sentfriendreqbtn-button
+{
+    position: relative;
+    top: .5em;
+    right: 3px;
+    text-align: right;
+}
+.reqsent-fullbtn
+{
+    width: 90%;
+    height: 4em;
+    background: linear-gradient(to right,rgb(61, 61, 61),rgb(116, 116, 116),#fff);
+    position: relative;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 8px;
+
+}

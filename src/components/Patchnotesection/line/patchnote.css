@@ -1,0 +1,57 @@
+.patchImage
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    margin: 10px;
+}
+.patchImage-left
+{
+    float: left;
+}
+.patchImage-right
+{
+    float: right;
+}
+.patch-content-left
+{
+    text-align: left;
+}
+.patch-content-right
+{
+    text-align: right;
+}
+    
+.patchh3
+{
+    padding-top: 3rem;
+}
+.patch-main-div
+{
+    margin: 4rem 0;
+}
+@media only screen and (max-width: 900px) {
+    .patchImage-right
+    {
+        float: right;
+    }
+    .patch-content-left
+    {
+        text-align: center !important;
+    }
+    .patch-content-right
+    {
+        text-align: center !important;
+    }
+    .patchh3
+    {
+        padding-top: 0;
+    }
+    .patchImage
+    {
+        width: 8rem;
+        height: 8rem;
+        margin-top: 4rem;
+    }
+    
+}

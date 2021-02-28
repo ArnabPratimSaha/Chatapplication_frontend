@@ -1,0 +1,137 @@
+.div-Intro-1
+{
+    text-align: center;
+    height: 35rem;
+    padding-top: 10rem;
+}
+
+.div-intro-2 h1
+{
+    font-size:4rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.div-intro-2 h6
+{
+    font-size:2rem;
+    color: #fff;
+}
+.div-intro-2 h1
+{
+    position: absolute;
+    left: 0; 
+    right: 0;
+    bottom:50%;
+    z-index: 0;
+    animation-name: example; 
+    animation-duration: 2s;
+}
+@keyframes example
+{
+    0%{
+        z-index: -1;
+        bottom: 0%;
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+        z-index: 0;
+    }
+    75%{
+        opacity: .8;
+    }
+    100%{
+        bottom:50%;
+        opacity: 1;
+    }
+}
+.div-intro-2 h6
+{
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top:50%;
+    animation-name: example2; 
+    animation-duration: 2s;
+}
+@keyframes example2
+{
+    0%{
+        top: 0%;
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .8;
+    }
+    100%{
+        top:50%;
+        opacity: 1;
+    }
+}
+.button-1
+{
+    width: 12rem;
+    height: 4rem;
+    font-size: xx-large;
+    border-radius: 20px;
+    color: #fff !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 60%;
+    background:transparent;
+    animation-name: example3; 
+    animation-duration: 4s;
+}
+.button-1:hover
+{
+    background-color:rgba(255, 255, 255, 0.445);
+    width: 14rem;
+    height: 5rem;
+    transition: all .4s; 
+}
+@keyframes example3
+{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .div-intro-2 h1
+    {
+        font-size:2rem;
+    }
+    .div-intro-2 h6
+    {
+        font-size:1rem;
+    }
+    .button-1
+    {
+        width: 10rem;
+        height: 3rem;
+        font-size: x-large;
+    }
+    .button-1:hover
+    {
+        background-color:rgba(255, 255, 255, 0.445);
+        width: 12rem;
+        height: 4rem;
+        transition: all .4s; 
+    }
+}
+.intro-brandname
+{
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    color: #fff !important;
+    padding-top: 2rem;
+    font-family: 'Dancing Script', cursive;
+}

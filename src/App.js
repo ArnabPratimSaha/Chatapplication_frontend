@@ -1,24 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import axios from "axios";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch
+} from 'react-router-dom';
+
+import Home from "./pages/home/home";
+import Login from "./pages/login/login";
+import Register from "./pages/register/register";
+import Ui from "./pages/uipage.js/ui"
+import Friends from "./pages/makefriend/makefriend";
+import Chat from "./pages/Chat/frontpage";//chat frontpage
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/home" exact>
+          <Home/>
+        </Route>
+        <Route path="/home/register" exact>
+          <Register/>
+        </Route>
+        <Route path="/home/login" exact>
+          <Login/>
+        </Route>
+        <Route path="/home/secrets" exact>
+          <Ui/>
+        </Route>
+        <Route path="/home/friends" exact>
+          <Friends/>
+        </Route>
+        <Route path="/home/chat" exact>
+          <Chat/>
+        </Route>
+        <Redirect to="/home"></Redirect>
+      </Switch>
+    </Router>
   );
 }
 

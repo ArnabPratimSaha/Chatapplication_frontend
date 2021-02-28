@@ -1,0 +1,39 @@
+.friendreq-cancel-button
+{
+    background: transparent;
+    color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 15px;
+}
+.friendreq-cancel-button:hover
+{
+    color: rgb(202, 0, 0);
+    border: 2px solid rgb(202, 0, 0);
+}
+.friendreq-accept-button
+{
+    background: transparent;
+    color: rgb(34, 121, 0);
+    border: 1px solid rgb(25, 124, 0);
+    border-radius: 15px;
+}
+.friendreq-accept-button:hover
+{
+    color: rgb(13, 46, 0);
+    border: 2px solid rgb(12, 61, 0);
+}
+.sentfriendrecbtn-button
+{
+    position: relative;
+    top: .5em;
+    right: 3px;
+    text-align: right;
+}
+.sentfriendrecbtn-button form
+{
+    display: inline-flex;
+}
+.friendreqrevbtn
+{
+    margin: 3px;
+}

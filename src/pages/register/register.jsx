@@ -27,7 +27,7 @@ const Register=()=>{
     const handleSubmit = (event) => {
         axios({
             method: 'post',
-            url: 'https://chatterarnab.herokuapp.com/home/register',
+            url: process.env.REACT_APP_BACKEND_URL+"/register",
             data: {
                 "username":event.target.username.value,
                 "email": event.target.email.value,

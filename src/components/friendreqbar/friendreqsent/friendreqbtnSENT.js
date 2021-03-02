@@ -11,7 +11,7 @@ const SentBTN=(props)=>
         event.preventDefault();
         axios({
             method: 'post',
-            url: 'https://chatterarnab.herokuapp.com/home/friend/sentreq/reject',
+            url: process.env.REACT_APP_BACKEND_URL+"/friend/sentreq/reject",
             data: {
                 "email":props.email
             },

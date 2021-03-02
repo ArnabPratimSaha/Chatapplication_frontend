@@ -24,7 +24,7 @@ const ChatFrontPage=()=>{
         {
             window.location="home";
         }
-        axios.get("https://chatterarnab.herokuapp.com/home/chat/frontpage",{headers : {'x-auth-token': token}})
+        axios.get(process.env.REACT_APP_BACKEND_URL+"/chat/frontpage",{headers : {'x-auth-token': token}})
         .then(function (response) {
             if(!response.data.status)
             {
@@ -38,7 +38,7 @@ const ChatFrontPage=()=>{
 
     useEffect(() => {
 
-        axios.get("https://chatterarnab.herokuapp.com/home/chat/getfriends", { headers: { 'x-auth-token': token } })
+        axios.get(process.env.REACT_APP_BACKEND_URL+"/chat/getfriends", { headers: { 'x-auth-token': token } })
             .then(function (response) {
                 changeNames(names = []);
                 for (let i = 0; i < response.data.names.length; i++) {
@@ -49,7 +49,7 @@ const ChatFrontPage=()=>{
                 // handle error
                 console.log(error);
             });
-            axios.get("https://chatterarnab.herokuapp.com/home/chat/getfriendreqpending", { headers: { 'x-auth-token': token } })
+            axios.get(process.env.REACT_APP_BACKEND_URL+"/chat/getfriendreqpending", { headers: { 'x-auth-token': token } })
             .then(function (response) {
                 changeFriendReq(response.data.length);
             })

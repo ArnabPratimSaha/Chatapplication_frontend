@@ -11,7 +11,7 @@ const Recivedbtn=(props)=>
         event.preventDefault();
         axios({
             method: 'post',
-            url: 'https://chatterarnab.herokuapp.com/home/friend/recreq/accept',
+            url: process.env.REACT_APP_BACKEND_URL+"/friend/recreq/accept",
             data: {
                 "email":props.email
             },
@@ -26,7 +26,7 @@ const Recivedbtn=(props)=>
         event.preventDefault();
         axios({
             method: 'post',
-            url: 'https://chatterarnab.herokuapp.com/home/friend/recreq/reject',
+            url: process.env.REACT_APP_BACKEND_URL+"/friend/recreq/reject",
             data: {
                 "email":props.email
             },

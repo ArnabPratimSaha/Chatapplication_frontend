@@ -3,14 +3,14 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 import "./navbar.css";
-
+require('dotenv').config()
 const Navbar=(props)=>
 {
     var [isverified,changeVerfied]=useState(false);
     const [name,changeName]=useState("");
     const token=Cookies.get('x-auth-token');
     useEffect(()=>{
-        axios.get("https://chatterarnab.herokuapp.com/home/getname",{headers : {'x-auth-token': token}})
+        axios.get(process.env.REACT_APP_BACKEND_URL+"/getname",{headers : {'x-auth-token': token}})
         .then(function (response) {
             if(response.data.status)
             {

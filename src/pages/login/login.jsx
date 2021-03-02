@@ -15,7 +15,7 @@ function Login(props){
         
         axios({
             method: 'post',
-            url: 'https://chatterarnab.herokuapp.com/home/login',
+            url: process.env.REACT_APP_BACKEND_URL+"/login",
             data: {
                 "email": event.target.email.value,
                 "password": event.target.password.value

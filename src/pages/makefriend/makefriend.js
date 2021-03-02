@@ -24,7 +24,7 @@ const Makefriend=()=>
 
     },[])
 
-    axios.get("https://chatterarnab.herokuapp.com/home/getname",{headers : {'x-auth-token': token}})
+    axios.get(process.env.REACT_APP_BACKEND_URL+"/getname",{headers : {'x-auth-token': token}})
         .then(function (response) {
         if(!response.data.status)
         {
@@ -41,7 +41,7 @@ const Makefriend=()=>
         event.preventDefault();
         axios({
             method: 'post',
-            url: 'https://chatterarnab.herokuapp.com/home/friend',
+            url: process.env.REACT_APP_BACKEND_URL+"/friend",
             data: {
               "username":event.target.name.value
             },

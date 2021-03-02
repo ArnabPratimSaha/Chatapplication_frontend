@@ -12,7 +12,7 @@ const Viewsrecreq = (props) => {
 
   const token = Cookies.get('x-auth-token');
   useEffect(() => {
-    axios.get('https://chatterarnab.herokuapp.com/home/friend/recreq', { headers: { 'x-auth-token': token } })
+    axios.get(process.env.REACT_APP_BACKEND_URL+"/friend/recreq", { headers: { 'x-auth-token': token } })
       .then(function (response) {
         changeNames(names=[]);
         for(let i=0;i<response.data.names.length;i++)
@@ -23,7 +23,7 @@ const Viewsrecreq = (props) => {
     },[]);
 
   const handleComplete=(key)=>{
-    axios.get('https://chatterarnab.herokuapp.com/home/friend/recreq', { headers: { 'x-auth-token': token } })
+    axios.get(process.env.REACT_APP_BACKEND_URL+"/friend/recreq", { headers: { 'x-auth-token': token } })
       .then(function (response) {
         changeNames(names = []);
         for (let i = 0; i < response.data.names.length; i++) {

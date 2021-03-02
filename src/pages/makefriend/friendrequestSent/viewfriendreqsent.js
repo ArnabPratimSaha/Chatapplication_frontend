@@ -10,7 +10,7 @@ const Viewsentreq=(props)=>{
     var [names,changeNames]=useState([]);
     const token = Cookies.get('x-auth-token');
     useEffect(() => {
-      axios.get('https://chatterarnab.herokuapp.com/home/friend/sentreq', { headers: { 'x-auth-token': token } })
+      axios.get(process.env.REACT_APP_BACKEND_URL+"/friend/sentreq", { headers: { 'x-auth-token': token } })
         .then(function (response) {
           changeNames(names=[]);
           for(let i=0;i<response.data.names.length;i++)
@@ -21,7 +21,7 @@ const Viewsentreq=(props)=>{
       },[]);
       
     const handleComplete=(key)=>{
-        axios.get('https://chatterarnab.herokuapp.com/home/friend/sentreq', { headers: { 'x-auth-token': token } })
+        axios.get(process.env.REACT_APP_BACKEND_URL+"/friend/sentreq", { headers: { 'x-auth-token': token } })
           .then(function (response) {
             changeNames(names = []);
             for (let i = 0; i < response.data.names.length; i++) {

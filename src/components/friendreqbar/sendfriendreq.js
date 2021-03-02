@@ -10,7 +10,7 @@ const [str,changeSrt]=useState("");
         event.preventDefault();
         axios({
             method: 'post',
-            url: 'https://chatterarnab.herokuapp.com/home/friend/send',
+            url: process.env.REACT_APP_BACKEND_URL+"/friend/send",
             data: {
                 "email":props.email
             },

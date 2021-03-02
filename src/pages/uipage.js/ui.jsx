@@ -26,7 +26,7 @@ const Ui = (props) => {
       {
           axios({
             method: "post",
-            url: "https://chatterarnab.herokuapp.com/home/chat/getallmassages",
+            url: process.env.REACT_APP_BACKEND_URL+"/chat/getallmassages",
             data: {
               name: props.name,
               email: props.email,
@@ -51,7 +51,7 @@ const Ui = (props) => {
   useEffect(() => {
     axios({
       method: "post",
-      url: "https://chatterarnab.herokuapp.com/home/chat/getallmassages",
+      url: process.env.REACT_APP_BACKEND_URL+"/chat/getallmassages",
       data: {
         name: props.name,
         email: props.email,
@@ -78,7 +78,7 @@ const handleSubmit=(event)=>{
   {
       axios({
           method: 'post',
-          url: 'https://chatterarnab.herokuapp.com/home/chat/sendmassage',
+          url: process.env.REACT_APP_BACKEND_URL+"/chat/sendmassage",
           data: {
               "name":props.name,
               "email":props.email,

@@ -131,8 +131,8 @@ const Register=()=>{
             </div>
             <div className="login-div">
                 <form onSubmit={handleSubmit}>
-                    <input type="text" name="username" onChange={handleChange} placeholder="Username" className="inputfield1 inputfield"></input><br/>
-                    <input type="email" name="email" onChange={handleChange} placeholder="Email" className="inputfield2 inputfield"></input><br/>
+                    <input type="text" name="username" onChange={handleChange} placeholder="Username" className="inputfield1 inputfield" autoComplete="off"></input><br/>
+                    <input type="email" name="email" onChange={handleChange} placeholder="Email" className="inputfield2 inputfield" autoComplete="off"></input><br/>
                     <input type="password" name="password" onChange={handleChange} placeholder="Password"  className="inputfield3 inputfield"></input><br/>
                     <input type="password" name="confirmPassword" onChange={handleChange} placeholder="Comfirm password"  className="inputfield4 inputfield"></input><br/>
                     <h1 id="error">{h1Title}</h1>

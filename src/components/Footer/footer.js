@@ -21,9 +21,9 @@ const Footer=()=>{
             </div>
             <div className="footer-middlediv">
                 <h6>Contact Me</h6>
-                <a href="#"><i className="fab fa-instagram"></i></a> 
-                <a href="#"><i className="fab fa-facebook"></i></a> 
-                <a href="#"><i className="fas fa-envelope"></i></a> 
+                <a href="https://github.com/ArnabPratimSaha"><i className="fab fa-github"></i></a> 
+                <a href="https://www.instagram.com/arnabpratimsaha/"><i className="fab fa-instagram"></i></a> 
+                <a href="https://discord.gg/EAmu6pNJp7"><i className="fab fa-discord"></i></a> 
                 <h6>COPYRIGHT © {date}</h6>
             </div>
         </div>

@@ -63,7 +63,7 @@ function Login(props){
                     </div>
                     <div className="login-div">
                     <form onSubmit={handleSubmit} method="post">
-                        <input type="text" placeholder="enter your name" name="name" onChange={handleChange} className="inputfield1 inputfield" /><br/>
+                        <input type="text" placeholder="enter your name" name="name" onChange={handleChange} className="inputfield1 inputfield" autoComplete="off"/><br/>
                         <input type="email" name="email" placeholder="email" onChange={handleChange}   className="inputfield2 inputfield" /><br/>
                         <input type="password" name="password" placeholder="password" onChange={handleChange}  className="inputfield3 inputfield" /><br/>
                         <h1 id="error">{h1Title}</h1>

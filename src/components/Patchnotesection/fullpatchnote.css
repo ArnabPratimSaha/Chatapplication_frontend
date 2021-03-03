@@ -13,6 +13,7 @@
 .fullpatch-main-div h1
 {
     padding-top: 3rem;
+    font-family: 'Dancing Script', cursive;
 }
 @media only screen and (max-width: 900px) {
     .fullpatch-main-div
@@ -22,5 +23,9 @@
     .patch-note-section
     {
         margin: 2rem 1rem;
+    }
+    .fullpatch-main-div h1
+    {
+        font-size: 2rem;
     }
 }

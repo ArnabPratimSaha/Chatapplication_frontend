@@ -2,97 +2,6 @@
 {
     text-align: center;
 }
-.weather-div-main
-{
-    background-image: url("./images/backgroundimg-2.jpg");
-    height: 36rem;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;   
-    background-size:cover;
-    background-position: 50% 50%;
-
-}
-.weather-updates
-{
-    position: absolute;
-    height: 7rem;
-    top: 29rem;
-    width: 100%;
-    background-image: linear-gradient(to top , #78e4ff ,#ff48f900);
-}
-
-.cloudy-day
-{
-    background-image: url(./images/cloudy_day.jpg);
-    transition: all 5s;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;   
-    background-size:cover;
-    background-position: 50% 50%;
-}
-.cloudy-night
-{
-    background-image: url(./images/cloudy_night.jpg);
-    transition: all 5s;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;   
-    background-size:cover;
-    background-position: 50% 100%;
-}
-.rainy-day
-{
-    background-image: url(./images/rainy-day.jpg);
-    transition: all 5s;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;   
-    background-size:cover;
-    background-position: 50% 50%;
-}
-.rainy-night
-{
-    background-image: url(./images/rainy_night.jpg);
-    transition: all 5s;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;   
-    background-size:cover;
-    background-position: 50% 50%;
-}
-.snowy-day
-{
-    background-image: url(./images/snowy_day_2.jpg);
-    transition: all 5s;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;   
-    background-size:cover;
-    background-position: 50% 50%;
-}
-.snowy-night
-{
-    background-image: url(./images/snowy_night.jpg);
-    transition: all 5s;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;   
-    background-size:cover;
-    background-position: 50% 50%;
-}
-.clear-night
-{
-    background-image: url(./images/clear-night.jpg);
-    transition: all 5s;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;   
-    background-size:cover;
-    background-position: 50% 50%;
-}
-.clear-day
-{
-    background-image: url(./images/sunny-day.jpg);
-    transition: all 5s;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;   
-    background-size:cover;
-    background-position: 50% 50%;
-}
 .col-frontpage
 {
     padding-top: 2rem;
@@ -100,7 +9,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
 }
-@media only screen and (max-width: 600px) {
+.brand-title
+{
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 4.5rem !important;
+    color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
     .col-frontpage
     {
         padding-top: 0rem;
@@ -121,33 +37,37 @@
     font-size: 2rem !important;
 }
 .button-frontpage{
-    width: 7rem;
-    height: 2.5rem;
+    width: 8rem;
+    height: 3rem;
     background: transparent;
     border-radius: 3rem;
     border: 1.3px solid;
     color: rgb(255, 255, 255);
     margin-left: .8rem;
     margin-top: 1rem;
+    font-size: 1rem;
 }
 .button-frontpage:hover
 {
     background: #ffffff9f;
     border-color: rgba(1, 1, 3, 0);
-    width:12rem;
+    width:10rem;
     transition: width .5s;
 }
 .findfriend-button-handler
 {
-    height: 17rem;
+    height: 25rem;
+    padding-top: 4rem;
     background-image: linear-gradient(to right bottom,#ff48fa,#78e4ff);
 }
-.findfriend-button-handler h1
-{
-    padding-top: 3rem;
-    color: #fff !important;
-    font-size: 3rem;
 
+.findfriend-button-handler h2
+{
+    padding-top: 1rem;
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 300;
 }
 .findfriend-button-handler h3
 {
@@ -157,13 +77,16 @@
 }
 .chatfront-chat-list
 {
-    height: 60rem;
-    width: 100%;
+    height: 70rem;
     background-image: url("./images/background-images.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding-top: 10rem;
+}
+.chatfront-chat-list .row
+{
+    margin: 0 !important;
 }
 .chatfront-chat-list h1
 {
@@ -179,7 +102,7 @@
 .chatfront-chatbox
 {
     position: relative;
-    right: 15rem;
+    right: 10rem;
 }
 .chatfront-names-div
 {
@@ -225,6 +148,6 @@
     }
     .chatfront-chat-list
     {
-        height: 69rem;
+        height: 90rem;
     }
 }

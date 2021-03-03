@@ -1,3 +1,17 @@
+.recfriendreqbtn-title
+{
+    text-align: left;
+    float: left;
+    width: 40%;
+}
+.recfriendreqbtn-title h6:nth-child(1)
+{
+    color:rgb(255, 255, 255) !important;
+}
+.recfriendreqbtn-title h6:nth-child(2)
+{
+    color:rgb(0, 0, 0) !important;
+}
 .friendreq-cancel-button
 {
     background: transparent;
@@ -22,18 +36,35 @@
     color: rgb(13, 46, 0);
     border: 2px solid rgb(12, 61, 0);
 }
-.sentfriendrecbtn-button
+.recfriendrecbtn-button
 {
     position: relative;
-    top: .5em;
+    top: .3em;
     right: 3px;
     text-align: right;
-}
-.sentfriendrecbtn-button form
-{
-    display: inline-flex;
+    float: right;
+    width: 45%;
 }
 .friendreqrevbtn
 {
     margin: 3px;
+    width: 5rem;
+    float: left;
+}
+@media only screen and (max-width: 900px) {
+    .recfriendrecbtn-button
+    {
+        top: -5px;
+        text-align: right;
+    }
+    .friendreq-cancel-button
+    {
+        width: 5rem;
+    }
+    .friendreqrevbtn
+    {
+        margin: 3px;
+        width: 5rem;
+        float:none;
+    }
 }

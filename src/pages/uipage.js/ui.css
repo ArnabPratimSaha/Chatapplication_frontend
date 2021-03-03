@@ -28,7 +28,7 @@
 {
     border: none;
     background: transparent;
-    width: 90%;
+    width: 80%;
     border-bottom: 4px solid black;
     color: #fff;
 }
@@ -54,9 +54,16 @@
 {
     color: #fff !important;
 }
+
+.emoji
+{
+    position: absolute;
+}
+
 @media only screen and (max-width: 1300px) {
     .chatbox-input input
     {
-        width: 80%;
+        width: 65%;
     }
+
 }

@@ -39,23 +39,20 @@ const Recivedbtn=(props)=>
 
     return(
         <div>
-        <div className="reqsent-fullbtn">
-            <div className="sentfriendreqbtn-title">
-                <h6>{props.name}</h6>
-                <h6>{props.email}</h6>
+            <div className="reqsent-fullbtn">
+                <div className="recfriendreqbtn-title">
+                    <h6>{props.name}</h6>
+                    <h6>{props.email}</h6>
+                </div>
+                <div className="recfriendrecbtn-button">
+                    <form onSubmit={handleSubmit1}>
+                        <button type="submit" name="accept" value={"accept"} className="friendreq-accept-button friendreqrevbtn">accept</button>
+                    </form>
+                    <form onSubmit={handleSubmit2}>
+                        <button type="submit" name="reject" value={"reject"} className="friendreq-cancel-button friendreqrevbtn">reject</button>
+                    </form>
+                </div>
             </div>
-            <div className="sentfriendrecbtn-button">
-                <form onSubmit={handleSubmit1}>
-                    <button type="submit" name="accept" value={"accept"} className="friendreq-accept-button friendreqrevbtn">accept</button>
-                </form>
-                <form onSubmit={handleSubmit2}>
-                    <button type="submit" name="reject" value={"reject"} className="friendreq-cancel-button friendreqrevbtn">reject</button>
-                </form>
-            </div>
-        </div>
-            
-            
-                
         </div>
     );
 }

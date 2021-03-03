@@ -2,6 +2,7 @@
 {
     text-align: left;
     float: left;
+    width: 60%;
 }
 .sentfriendreqbtn-title h6:nth-child(1)
 {
@@ -9,7 +10,7 @@
 }
 .sentfriendreqbtn-title h6:nth-child(2)
 {
-    color:rgb(148, 148, 148) !important;
+    color:rgb(0, 0, 0) !important;
 }
 .sentfriendreqbtn-button
 {
@@ -29,4 +30,15 @@
     border-radius: 20px;
     padding: 8px;
 
+}
+@media only screen and (max-width: 600px) {
+    .reqsent-fullbtn
+    {
+        width: 100% !important;
+        height: 5em;
+    }
+    .sentfriendreqbtn-title
+    {
+        padding-top: 5px;
+    }
 }

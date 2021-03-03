@@ -20,3 +20,32 @@
     font-size: 3rem;
     color: #91091e;
 }
+.feature-h2
+{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.features h1
+{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+@media screen and (max-width: 992px) {
+    .feature-h2
+    {
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+    .feature-col
+    {
+        margin-top: 2rem;
+    }
+    .features h1
+    {
+        font-size: 2.5rem;
+        padding-bottom: 0rem;
+    }
+}

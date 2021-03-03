@@ -24,36 +24,41 @@ const Navbar=(props)=>
             const disableButtonList=document.getElementsByName(props.buttonName);
     if(disableButtonList)
     {
+        if(isverified===false )
+        {
+            var tempKey=document.getElementsByName("friends")[0];
+            tempKey.disabled = true;
+            tempKey.style.opacity = "0.5";
+            tempKey.classList.remove("navbar-button-slider");
+            tempKey.classList.add("navbar-active-page-button");
+
+            tempKey=document.getElementsByName("chat")[0];
+            tempKey.disabled = true;
+            tempKey.style.opacity = "0.5";
+            tempKey.classList.remove("navbar-button-slider");
+            tempKey.classList.add("navbar-active-page-button");
+        }
         const disableButton=disableButtonList[0];
         if(disableButton.name==="home" || disableButton.name==="chat" || disableButton.name==="friends")
         {
             disableButton.disabled = true;
             disableButton.style.opacity = "0.5";
-            disableButton.classList.remove("navbar-button");
+            disableButton.classList.remove("navbar-button-slider");
             disableButton.classList.add("navbar-active-page-button");
             if(isverified===false )
             {
                 var tempKey=document.getElementsByName("friends")[0];
                 tempKey.disabled = true;
                 tempKey.style.opacity = "0.5";
-                tempKey.classList.remove("navbar-button");
+                tempKey.classList.remove("navbar-button-slider");
                 tempKey.classList.add("navbar-active-page-button");
 
                 tempKey=document.getElementsByName("chat")[0];
                 tempKey.disabled = true;
                 tempKey.style.opacity = "0.5";
-                tempKey.classList.remove("navbar-button");
+                tempKey.classList.remove("navbar-button-slider");
                 tempKey.classList.add("navbar-active-page-button");
             }
-        }
-        else
-        {
-            disableButtonList.forEach(item=>{
-                item.disabled = true;
-                item.style.opacity = "0.5";
-                item.classList.remove("navbar-button");
-                item.classList.add("navbar-active-page-button-bottom");
-            })
         }
     }
         })
@@ -140,26 +145,28 @@ const Navbar=(props)=>
         <div>
             <div className="navbar-div-1" id="sticky-navbar">
                 <i className="fas fa-bars" id="navbar-icon-togle" onClick={handleBlur}></i>
-                <a href="#">Chatter</a>
+                <a href="#" className="navbar-brandname">Chatter</a>
                 <div className="navbar-button-div" >
-                    {!isverified && <button className="navbar-button" name="login" type="submit" onClick={handleClick}>Log In</button>}
-                    {!isverified && <button className="navbar-button" name="signin" type="submit" onClick={handleClick}>Sign In</button>}
-                    {isverified && <h6>Signed in as  {name}</h6>}
-                    {isverified && <button className="navbar-button" name="logout" type="submit" onClick={handleClick}>Log Out</button>}
+                    {isverified && <h6 className="navbar-signed-in-as">Signed in as  {name}</h6>}
+                    <div>
+                        {!isverified && <button className="navbar-button" name="login" type="submit" onClick={handleClick}>Log in</button>}
+                        {!isverified && <button className="navbar-button" name="signin" type="submit" onClick={handleClick}>Sign up</button>}
+                        {isverified && <button className="navbar-button" name="logout" type="submit" onClick={handleClick}>Log out</button>}
+                    </div>
                 </div>
             </div>
             <div className="navbar-idle" id="navbar-slider">
                 <h6 className="navbar-dashboard">Menu</h6>
                 <div className="navbar-buttons-1">
-                    <button className="navbar-button" name="home" type="submit" onClick={handleClick}>Home</button><br/>
-                    <button className="navbar-button" name="chat" type="submit" onClick={handleClick}>Chat</button><br/>
-                    <button className="navbar-button" name="friends" type="submit" onClick={handleClick}>Friends</button><br/>
+                    <button className="navbar-button-slider" name="home" type="submit" onClick={handleClick}>Home</button><br/>
+                    <button className="navbar-button-slider" name="chat" type="submit" onClick={handleClick}>Chat</button><br/>
+                    <button className="navbar-button-slider" name="friends" type="submit" onClick={handleClick}>Friends</button><br/>
                 </div>
                 <div className="navbar-buttons-2">
-                    <button className="navbar-button" name="login" type="submit" onClick={handleClick}>log in</button><br/>
-                    <button className="navbar-button" name="signin" type="submit" onClick={handleClick}>sign up</button><br/>
-                    {isverified && <button className="navbar-button" name="logout" type="submit" onClick={handleClick}>Log Out</button>}
-                    <h6 className="navbar-versioncontrol">version :0.1.0 (beta)</h6>
+                    <button className="navbar-button-slider" name="login" type="submit" onClick={handleClick}>Log in</button><br/>
+                    <button className="navbar-button-slider" name="signin" type="submit" onClick={handleClick}>Sign up</button><br/>
+                    {isverified && <button className="navbar-button-slider" name="logout" type="submit" onClick={handleClick}>Log Out</button>}
+                    <h6 className="navbar-versioncontrol">version :{process.env.REACT_APP_VERSION}</h6>
                 </div>
             </div>
         </div>

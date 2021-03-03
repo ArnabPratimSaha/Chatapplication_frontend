@@ -1,8 +1,5 @@
 import { useState } from "react";
 
-import Cookies from "js-cookie";
-import axios from "axios";
-
 import Navbar from "../../components/sticky-navbar/navbar";
 import "./home.css";
 import Footer from "../../components/Footer/footer";
@@ -12,12 +9,10 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import Intro from "../../components/Introduction/intro";
 import Feature from "../../components/Features/features";
-import Slider from "../../components/slider/slider";
 import Patch from "../../components/Patchnotesection/fullpatchnote";
 
 
 const Home=()=>{
-
     return(
         <div>
             <Navbar buttonName="home"/>

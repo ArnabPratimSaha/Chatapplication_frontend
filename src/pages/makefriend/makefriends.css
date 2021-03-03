@@ -11,16 +11,16 @@
     padding-bottom: 5rem;
     height: 50rem;
 }
-@media only screen and (max-width: 900px) {
-    .friendreq-infodiv{
-        height: 70rem;
-    }
-    .friendreq-searchdiv-search-result
-    {
-        width: 100% !important;
-        margin: 0 !important;
-    }
+.friendreq-infodiv h1
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
 }
+.friendreq-infodiv h4
+{
+    font-family: 'Montserrat', sans-serif ;
+}
+
 .friendreq-searchdiv-search-result
 {
     height: 15rem;
@@ -43,7 +43,7 @@
 .friendreq-searchdiv
 {
     width: 100%;
-    height: 60rem;
+    height: 50rem;
     text-align: center;
     background-image: url("./images/image-2.jpg");
     background-repeat: no-repeat;
@@ -56,11 +56,12 @@
 }
 .friendreq-searchdiv-search h1
 {
-    padding-top: 15rem;
+    padding-top: 5rem;
     padding-bottom: 4rem;
     color: #fff;
     font-size: 4rem;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 300;
 }
 .friendreq-searchdiv-search input
 {
@@ -82,7 +83,7 @@
 }
 .friendreq-searchdiv-search button
 {
-    margin-top: 2em;
+    margin-top: 1em;
     background: transparent;
     color: #fff;
     border: 3px solid #fff;
@@ -116,4 +117,44 @@
     margin: 0;
     position: relative;
     bottom: -4px;
+}
+@media only screen and (max-width: 900px) {
+    .friendreq-infodiv{
+        height: 70rem;
+    }
+    .friendreq-searchdiv-search-result
+    {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .friendreq-infodiv h1
+    {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .friendreq-infodiv h4
+    {
+        color: #fff;
+        font-size: 1rem;
+    }
+    .friendreq-searchdiv input
+    {
+        width: 80%;
+        height: 2.5rem;
+    }
+    .friendreq-searchdiv-search button
+    {
+        width: 6rem;
+        margin-top: .5rem;
+        font-size: 1em;
+    }
+    .friendreq-searchdiv-search button:hover
+    {
+        width: 6em;
+        transition: all .4s;
+    }
+    .friendreq-searchdiv-search h1
+    {
+        font-size: 2.5rem;
+    }
 }

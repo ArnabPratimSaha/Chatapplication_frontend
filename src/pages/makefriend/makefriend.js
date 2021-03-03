@@ -83,6 +83,7 @@ const Makefriend=()=>
     }
     return(
         <div>
+        
             <Navbar buttonName="friends"/>
             <div name="top-div">
                 <div className="friendreq-infodiv">
@@ -91,10 +92,10 @@ const Makefriend=()=>
 
                     <div className="container friendreq-container">
                         <div className="row">
-                            <div className="col col-lg-6 col-md-6 col-sm-12 col-12 friendreq-send-div">
+                            <div className="col col-lg-6 col-md-12 col-sm-12 col-12 friendreq-send-div">
                                 {sentreq}
                             </div>
-                            <div className="col col-lg-6 col-md-6 col-sm-12  col-12 friendreq-rec-div">
+                            <div className="col col-lg-6 col-md-12 col-sm-12  col-12 friendreq-rec-div">
                                 <SeeFriendReqRecived/>
                             </div>
                         </div>
@@ -107,7 +108,7 @@ const Makefriend=()=>
                     <div className="friendreq-searchdiv-search">
                         <h1>Search for friends</h1>
                         <form onSubmit={handleSubmit}>
-                            <input type="text" placeholder="enter your friend's username" name="name"></input><br/> 
+                            <input type="text" placeholder="enter your friend's username" name="name" autoComplete="off"></input><br/> 
                             <button>SEND</button>
                         </form> 
                     </div>

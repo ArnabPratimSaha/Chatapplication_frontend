@@ -13,9 +13,11 @@
     "dotenv": "^8.2.0",
     "emoji-picker-react": "^3.4.2",
     "js-cookie": "^2.2.1",
+    "particlesjs": "^2.2.3",
     "react": "^17.0.1",
     "react-cookie": "^4.0.3",
     "react-dom": "^17.0.1",
+    "react-particles-js": "^3.4.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
     "web-vitals": "^1.1.0"

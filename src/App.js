@@ -11,7 +11,7 @@ import {
 import Home from "./pages/home/home";
 import Login from "./pages/login/login";
 import Register from "./pages/register/register";
-import Ui from "./pages/uipage.js/ui"
+import Signup from "./pages/signup/signup"
 import Friends from "./pages/makefriend/makefriend";
 import Chat from "./pages/Chat/frontpage";//chat frontpage
 
@@ -23,13 +23,13 @@ function App() {
           <Home/>
         </Route>
         <Route path="/home/register" exact>
-          <Register/>
+          <Signup/>
         </Route>
         <Route path="/home/login" exact>
           <Login/>
         </Route>
         <Route path="/home/secrets" exact>
-          <Ui/>
+          <Signup/>
         </Route>
         <Route path="/home/friends" exact>
           <Friends/>

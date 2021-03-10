@@ -4,8 +4,6 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 import "./signup.css";
-
-import Svg from "./images/background.svg";
 import Navbar from "../../components/sticky-navbar/navbar";
 import Footer from "../../components/Footer/footer";
 import CodeValidator from "../../components/codeValidateComponent/codeValidate";

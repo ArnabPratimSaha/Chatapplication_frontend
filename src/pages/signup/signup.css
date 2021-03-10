@@ -3,17 +3,18 @@
     height: 50rem;
     width: 100%;
     background-image: radial-gradient(circle, #0e3fc5, #194dc9, #265acc, #3466ce, #4372cf, #5971cd, #6a71cb, #7970c9, #9260bd, #a84cab, #ba3493, #c50e76);
-    /* background-image: url("./images/cool-background.png");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    background-attachment: fixed; */
 }
 .signup-main-div-change
 {
     height: 50rem;
     width: 100%;
     background: radial-gradient(circle, #0e3fc5, #294cc8, #3b59ca, #4a65cc, #5971cd);
+}
+.brand-title
+{
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 4.5rem !important;
+    color: #fff;
 }
 .particles
 {

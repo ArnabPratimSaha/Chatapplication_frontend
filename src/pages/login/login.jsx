@@ -2,14 +2,14 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import Particles from "react-particles-js";
 
-import { useState } from "react";
+import react,{ useState } from "react";
 import "./login.css";
 
 import Footer from "../../components/Footer/footer";
 import Navbar from "../../components/sticky-navbar/navbar";
 
 
-function Login(props){
+const Login=(props)=>{
     var [isButtonActive,changeIsButtonActive]=useState(false);
     const [credentials,changeCredentials]=useState("");
     
@@ -88,7 +88,6 @@ function Login(props){
                     <Particles className="particles"/>
                     <div className="login-form-div">
                         <h1 className="brand-title">Chatter</h1>
-                        {/* brand-title is from chat */}
                         <h2>Log in</h2>
                         <p>Not Registered? Switch to <a href="/home/register">Sign up</a></p>
                         <form onSubmit={handleSubmit}>

@@ -23,7 +23,7 @@ const Features = (props) => {
           <div className="col-sm feature-col">
           <i className="fas fa-lock fasicon3"></i>
           <h2 className="feature-h2">
-            Massage Encryption
+            Message Encryption
           </h2>
           </div>
         </div>

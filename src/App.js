@@ -1,6 +1,7 @@
 import './App.css';
 import axios from "axios";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -9,11 +10,13 @@ import {
 } from 'react-router-dom';
 
 import Home from "./pages/home/home";
-import Login from "./pages/login/login";
-import Register from "./pages/register/register";
-import Signup from "./pages/signup/signup"
-import Friends from "./pages/makefriend/makefriend";
-import Chat from "./pages/Chat/frontpage";//chat frontpage
+
+const Signup=React.lazy(()=>{import("./pages/signup/signup")});
+const Login=React.lazy(()=>{import("./pages/login/login")});
+const Friends=React.lazy(()=>{import("./pages/makefriend/makefriend")});
+const Chat=React.lazy(()=>{import("./pages/Chat/frontpage")});
+
+// git commit -m "added code spliting for optimization
 
 function App() {
   return (

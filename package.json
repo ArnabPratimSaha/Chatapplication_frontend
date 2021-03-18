@@ -13,6 +13,7 @@
     "dotenv": "^8.2.0",
     "emoji-picker-react": "^3.4.2",
     "js-cookie": "^2.2.1",
+    "node-sass": "^5.0.0",
     "particlesjs": "^2.2.3",
     "react": "^17.0.1",
     "react-cookie": "^4.0.3",

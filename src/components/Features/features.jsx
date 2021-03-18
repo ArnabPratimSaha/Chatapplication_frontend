@@ -1,7 +1,6 @@
 import react from "react";
 import "./features.css";
 
-
 const Features = (props) => {
   return (
     <div className="features">

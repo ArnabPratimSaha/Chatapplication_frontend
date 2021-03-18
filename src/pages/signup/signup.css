@@ -2,13 +2,12 @@
 {
     height: 50rem;
     width: 100%;
-    background-image: radial-gradient(circle, #0e3fc5, #194dc9, #265acc, #3466ce, #4372cf, #5971cd, #6a71cb, #7970c9, #9260bd, #a84cab, #ba3493, #c50e76);
+    background-image: radial-gradient(circle, #14ffec, #00e3d7, #00c8c2, #00aeab, #029495, #0a8189, #176e7b, #205c6b, #2b4b5c, #2e3b49, #2b2d34, #212121);
 }
 .signup-main-div-change
 {
     height: 50rem;
     width: 100%;
-    background: radial-gradient(circle, #0e3fc5, #294cc8, #3b59ca, #4a65cc, #5971cd);
 }
 .brand-title
 {
@@ -36,11 +35,11 @@
 }
 .signin-form-div h2
 {
-    color: rgb(206, 206, 206);
+    color: rgb(71, 71, 71);
 }
 .signin-form-div p
 {
-    color: rgb(197, 197, 197);
+    color: rgb(71, 71, 71);
 }
 .exists-p
 {
@@ -60,7 +59,8 @@
     margin-top: 10px;
     border-radius: 20px;
     text-align: center;
-    color: #fff;
+    color: rgb(71, 71, 71);
+    border-color: rgb(71, 71, 71) ;
 }
 .inputfield::placeholder
 {
@@ -91,7 +91,7 @@
 }
 .btn-inactive
 {
-    opacity: .2;
+    opacity: .5;
     width: 6rem;
     height: 2.5rem;
     background: transparent;
@@ -108,8 +108,7 @@
     background: transparent;
     border-radius: 3rem;
     border: 1.3px solid;
-    color: rgb(255, 255, 255);
-    /* border-color: rgb(255, 255, 255); */
+    color: rgb(0, 0, 0);
     margin-left: .8rem;
     margin-top: 1rem;
 }
@@ -138,7 +137,7 @@
     font-size: 10px;
     padding: 0;
     margin: 0;
-    color: #ffffff;
+    color: rgb(71, 71, 71);
 }
 .signup-slot
 {
@@ -166,18 +165,18 @@
 {
     font-size: 1.2rem;
     display: inline-flex;
-    color: #fff;
+    color: rgb(71, 71, 71);
 }
 .signup-password-div h5
 {
     font-size: 1rem;
     display: inline-flex;
-    color: #fff;
+    color: rgb(71, 71, 71);
 }
 .signup-password-div p
 {
     display: inline-flex;
-    color: #fff;
+    color: rgb(71, 71, 71);
     padding-left: 10px;
     margin: 0;
 }
@@ -185,7 +184,7 @@
 {
     display: inline-flex;
     margin-left: 5px;
-    color: #fff;
+    color: rgb(71, 71, 71);
     margin-bottom: 0;
 }
 .signup-password-div form p:nth-child(1)

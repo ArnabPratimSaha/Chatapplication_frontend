@@ -17,12 +17,8 @@ const Home=()=>{
         <div>
             <Navbar buttonName="home"/>
             <div name="top-div">
-                <div id="div">
-                    <Intro/>
-                </div>
-                <div>
-                    <Feature/>
-                </div>
+                <Intro/>
+                <Feature/>
                 <Patch />
                 <Footer/>
             </div>

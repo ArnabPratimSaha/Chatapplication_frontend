@@ -1,73 +1,80 @@
 .div-Intro-1
 {
     text-align: center;
-    height: 35rem;
+    height: 38rem;
     padding-top: 10rem;
+    background-image: linear-gradient(to right bottom,#212121,#0d7477cc,#14ffeb3f),url("./images/image1.jpg");
+    clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: image-change 60s linear infinite;
 }
+@keyframes image-change
+{
+    0%
+    {
+        background-image: linear-gradient(to right bottom,#212121,#0d7477cc,#14ffeb3f),url("./images/image1.jpg");
+    }
+    25%
+    {
+        background-image: linear-gradient(to right bottom,#212121,#0d7477cc,#14ffeb3f),url("./images/image2.jpg");
+    }
+    50%
+    {
 
+        background-image: linear-gradient(to right bottom,#212121,#0d7477cc,#14ffeb3f),url("./images/image3.jpg");
+    }
+    75%
+    {
+        background-image: linear-gradient(to right bottom,#212121,#0d7477cc,#14ffeb3f),url("./images/image4.jpg");
+    }
+    100%
+    {
+        background-image: linear-gradient(to right bottom,#212121,#0d7477cc,#14ffeb3f),url("./images/image1.jpg");
+    }
+}
 .div-intro-2 h1
 {
+    position: relative;
     font-size:4rem;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-}
-.div-intro-2 h6
-{
-    font-size:2rem;
-    color: #fff;
-}
-.div-intro-2 h1
-{
-    position: absolute;
-    left: 0; 
-    right: 0;
-    bottom:50%;
     z-index: 0;
     animation-name: example; 
     animation-duration: 2s;
-}
-@keyframes example
-{
-    0%{
-        z-index: -1;
-        bottom: 0%;
-        opacity: 0;
-    }
-    50%{
-        opacity: .5;
-        z-index: 0;
-    }
-    75%{
-        opacity: .8;
-    }
-    100%{
-        bottom:50%;
-        opacity: 1;
-    }
+    font-weight: 300;
 }
 .div-intro-2 h6
 {
-    position: absolute;
+    position: relative;
+    font-size:2rem;
+    color: #fff;
     left: 0; 
     right: 0;
     top:50%;
     animation-name: example2; 
     animation-duration: 2s;
 }
+@keyframes example
+{
+    0%{
+        opacity: 0;
+        top:10rem;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
 @keyframes example2
 {
     0%{
-        top: 0%;
+        top: -10rem;
         opacity: 0;
     }
-    50%{
-        opacity: .5;
-    }
-    75%{
-        opacity: .8;
-    }
     100%{
-        top:50%;
+        top:0;
         opacity: 1;
     }
 }
@@ -78,10 +85,7 @@
     font-size: xx-large;
     border-radius: 20px;
     color: #fff !important;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    margin: 2rem auto;
     top: 60%;
     background:transparent;
     animation-name: example3; 
@@ -91,7 +95,6 @@
 {
     background-color:rgba(255, 255, 255, 0.445);
     width: 14rem;
-    height: 5rem;
     transition: all .4s; 
 }
 @keyframes example3
@@ -122,7 +125,6 @@
     {
         background-color:rgba(255, 255, 255, 0.445);
         width: 12rem;
-        height: 4rem;
         transition: all .4s; 
     }
 }

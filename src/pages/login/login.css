@@ -2,7 +2,7 @@
 {
     height: 45rem;
     width: 100%;
-    background-image: radial-gradient(circle, #0e3fc5, #194dc9, #265acc, #3466ce, #4372cf, #5971cd, #6a71cb, #7970c9, #9260bd, #a84cab, #ba3493, #c50e76);
+    background-image: radial-gradient(circle, #14ffec, #00e3d7, #00c8c2, #00aeab, #029495, #0a8189, #176e7b, #205c6b, #2b4b5c, #2e3b49, #2b2d34, #212121);
 
 }
 .login-form-div
@@ -25,11 +25,11 @@
 }
 .login-form-div h2
 {
-    color: rgb(206, 206, 206);
+    color: rgb(71, 71, 71);
 }
 .login-form-div p
 {
-    color: rgb(197, 197, 197);
+    color: rgb(71, 71, 71);
 }
 .login-form-div p a
 {
@@ -61,7 +61,7 @@
     background: transparent;
     border-radius: 3rem;
     border: 1.3px solid;
-    color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     /* border-color: rgb(255, 255, 255); */
     margin-left: .8rem;
     margin-top: 1rem;
@@ -82,7 +82,7 @@
 }
 .btn-inactive
 {
-    opacity: .2;
+    opacity: .5;
     width: 6rem;
     height: 2.5rem;
     background: transparent;
@@ -102,7 +102,8 @@
     margin-top: 10px;
     border-radius: 20px;
     text-align: center;
-    color: #fff;
+    color: rgb(71, 71, 71);
+    border-color: rgb(71, 71, 71) ;
 }
 .inputfield::placeholder
 {

@@ -1,0 +1,144 @@
+body
+{
+    overflow-x: hidden;
+}
+.patch-top-main
+{
+    height: 25rem;
+    padding-top: 5rem;
+    text-align: center;
+    background-color: rgb(204, 204, 204);
+}
+.circle-1
+{
+    height: 20rem;
+    width: 20rem;
+    background: transparent linear-gradient(to right bottom, #380140,  #050781);
+    position: absolute;
+    border-radius: 100%;
+    filter: brightness(400%);
+    opacity: .5;
+    z-index: 1;
+    margin: 10% auto auto -5%;
+    
+}
+.circle-2
+{
+    height: 20rem;
+    width: 20rem;
+    background: transparent linear-gradient(to right bottom, #380140,  #050781);
+    position: absolute;
+    border-radius: 100%;
+    filter: brightness(400%);
+    opacity: .5;
+    z-index: 1;
+    top: -5%;
+    right: -10%;
+    overflow-x: hidden;
+}
+h1,h2
+{
+    color: #fff;
+    text-shadow: 0 0 10px #464646,0 0 20px #464646,10px 10px 100px #464646,15px 15px 200px #464646;
+}
+@media screen and (max-width: 992px) {
+    .circle-1,.circle-2
+    {
+        height: 15rem;
+        width: 15rem;
+    }
+    .circle-1
+    {
+        margin-top: 40%;
+    }
+    .dropdown-dropdown-menu
+    {
+        transform: translateX(-50%);
+    }
+    .prev-patch-div h1
+    {
+        font-size: .8rem;
+    }
+}
+.prev-patch-div
+{
+    --dropdownselector:null;
+}
+.prev-patch-div h1
+{
+    display: inline-flex;
+    margin-top: 2.5rem;
+    margin-right: 10px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: rgb(59, 59, 59);
+    
+}
+.dropdown
+{
+    display: inline-flex;
+}
+.dropdown i
+{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 300ms ease-in-out;
+}
+.dropdown i:hover
+{
+    text-shadow: 0 0 10px #464646;
+}
+.dropdown-click
+{
+    transform: rotateZ(-180deg);
+}
+.dropdown-dropdown-menu
+{
+    width: 10rem;
+    position: absolute;
+    background: #fff;
+    top: 20px;
+    border-radius: 5px;
+    animation-name: animation1;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
+    transform-origin: top;
+
+}
+@keyframes animation1
+{
+    0%
+    {
+        transform: scaleY(0);
+    }
+    100%
+    {
+        transform: scaleY(1);
+    }
+}
+.dropdown-dropdown-menu ul
+{
+    padding: 0;
+    margin: 0;
+}
+.dropdown-dropdown-menu ul li
+{
+    width: 100%;
+    list-style-type: none;
+}
+.dropdown-dropdown-menu ul li:hover
+{
+    background: rgb(196, 196, 196);
+}
+.dropdown-dropdown-menu ul li p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.dropdown-dropdown-menu a
+{
+    display: inline-block;
+}

@@ -1,0 +1,15 @@
+
+.body-div p
+{
+    color: black;
+    padding-left: 10%;
+    margin-bottom: 3px;
+}
+.gap p
+{
+    margin-top: 3rem;
+}
+.major
+{
+    font-weight: 600;
+}

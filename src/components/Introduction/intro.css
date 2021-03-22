@@ -8,7 +8,9 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    animation: image-change 60s linear infinite;
+    transition: background-image 400ms ease-in-out;
+    animation: image-change 30s infinite;
+    animation-timing-function: linear;
 }
 @keyframes image-change
 {

@@ -1,0 +1,12 @@
+.heading-div h1
+{
+    text-shadow: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 1rem ;
+    margin-bottom: 10px;
+    padding-left: 5%;
+    font-size: 1.5rem;
+}

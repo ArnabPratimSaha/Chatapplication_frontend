@@ -14,7 +14,7 @@ const Signup=React.lazy(()=>import("./pages/signup/signup"));
 const Login=React.lazy(()=>import("./pages/login/login"));
 const Friends=React.lazy(()=>import("./pages/makefriend/makefriend"));
 const Chat=React.lazy(()=>import("./pages/Chat/frontpage"));
-
+const Patch=React.lazy(()=>import("./pages/Patch/patch"));
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
           <Route path="/home/register" exact component={Signup}/>
           <Route path="/home/login" exact component={Login}/>
           <Route path="/home/secrets" exact component={Signup}/>
+          <Route path="/patch" exact component={Patch}/>
           <Route path="/home/friends" exact component={Friends}/>
           <Route path="/home/chat" exact component={Chat}/>
           <Redirect to="/home"></Redirect>

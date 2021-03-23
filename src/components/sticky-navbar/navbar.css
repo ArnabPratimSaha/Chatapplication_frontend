@@ -6,15 +6,14 @@
 .navbar-div-1
 {
     width: 100%;
-    height: 6em;
-    background: linear-gradient(to bottom,#ff48fa,#ff48f900);
+    height: 7em;
     position:fixed;
     padding: 0;
-    z-index: 2;
     padding: 1.5em 0;
+    padding-top: 2rem;
     transition: all .4s;
     z-index: 5;
-
+    
     filter: blur(0) !important;
     -webkit-filter: blur(0) !important;
 }
@@ -31,28 +30,34 @@
 {
     color: #fff;
 }
-.navbar-sticky i
+.navbar-sticky i:hover,.navbar-div-1 i:hover
 {
-    color: #fff !important;
-    padding: 0;
-    top: 20% !important;
-    bottom: 0;
-    cursor: pointer;
-    
-}
-.navbar-sticky i:hover
-{
-    color: rgb(194, 194, 194) !important;
+    color: rgb(156, 156, 156) !important;
 }
 .navbar-div-1 i
 {
+    color: #fff;
     font-size: 2rem;
     position: absolute;
     left: 7%;
-    top: 1em;
-    z-index: 3;
+    z-index: 5;
     cursor: pointer;
+    transition: transform 400ms ease-in-out;
 }
+.navbar-sticky i
+{
+    color: #fff;
+}
+.navbar-div-1 i:nth-child(1)
+{
+    z-index: 6;
+}
+.navbar-div-1 i:nth-child(1):hover + .fa-chevron-right,.navbar-div-1 i:nth-child(1):focus + .fa-chevron-right
+{
+    color: rgb(156, 156, 156) !important;
+    transform: translateX(75%);
+}
+
 
 .navbar-div-1 a
 {
@@ -65,19 +70,19 @@
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
     color: #fff !important;
-    padding-left: 10%;
+    left: 10%;
 }
 
 .navbar-sticky a
 {
     position: absolute;
-    top: 0;
+    top: 10%;
     color: #fff !important;
     transition: all .4s;
 }
-.navbar-div-1 a:hover
+.navbar-div-1 a:hover,.navbar-div-1 a:focus
 {
-    color: #fff !important;
+    color: rgb(156, 156, 156) !important;
     text-decoration: none;
 }
 
@@ -96,6 +101,7 @@
     border-radius: 3rem;
     border: 2px solid;
     color: rgb(255, 255, 255);
+    margin: auto 0;
     margin-left: .8rem;
     opacity: 3;
 }
@@ -246,7 +252,7 @@
         height: 2rem !important;
         border-radius: 1rem !important;
         border: 1px solid !important;
-        margin-top: .5rem !important;
+        top: 0;
     }
     .navbar-button-div
     {
@@ -287,11 +293,11 @@
     {
         font-size: 1.5em;
         top: 1.2em;
-        padding-left: 15%;
+        left: 18%;
     }
     .navbar-sticky a
     {
-        top: .5em;
+        top: .6em;
     }
     .navbar-versioncontrol
     {

@@ -13,3 +13,9 @@
 {
     font-weight: 600;
 }
+@media screen and (max-width: 992px) {
+    .body-div p
+    {
+        font-size: .8rem;
+    }
+}

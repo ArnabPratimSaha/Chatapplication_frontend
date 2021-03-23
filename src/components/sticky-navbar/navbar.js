@@ -9,6 +9,7 @@ const Navbar=(props)=>
     var [isverified,changeVerfied]=useState(false);
     const [name,changeName]=useState("");
     const token=Cookies.get('x-auth-token');
+
     useEffect(()=>{
         axios.get(process.env.REACT_APP_BACKEND_URL+"/getname",{headers : {'x-auth-token': token}})
         .then(function (response) {
@@ -81,17 +82,17 @@ const Navbar=(props)=>
         sliderToggle.addEventListener("click",()=>{
             if(slider.classList[0]=="navbar-idle")
             {
+                sliderToggle.style.transform="rotatez(-180deg)";
                 slider.classList.add("navbar-slider");
                 slider.classList.remove("navbar-idle");
-                sliderToggle.classList.remove("fa-bars");
-                sliderToggle.classList.add("fa-times");
+                document.getElementById("navbar-icon-togle-2").style.display="none";
             }
             else
             {
+                sliderToggle.style.transform="rotatez(0deg)";
                 slider.classList.add("navbar-idle");
                 slider.classList.remove("navbar-slider");
-                sliderToggle.classList.remove("fa-times");
-                sliderToggle.classList.add("fa-bars");
+                document.getElementById("navbar-icon-togle-2").style.display="block";
             }
         })
     }
@@ -144,7 +145,8 @@ const Navbar=(props)=>
     return(
         <div>
             <div className="navbar-div-1" id="sticky-navbar">
-                <i className="fas fa-bars" id="navbar-icon-togle" onClick={handleBlur}></i>
+                <i className="fas fa-chevron-right" id="navbar-icon-togle" onClick={handleBlur}></i>
+                <i className="fas fa-chevron-right" id="navbar-icon-togle-2"></i>
                 <a href="#" className="navbar-brandname">Chatter</a>
                 <div className="navbar-button-div" >
                     {isverified && <h6 className="navbar-signed-in-as">Signed in as  {name}</h6>}

@@ -7,7 +7,7 @@ const Version = {
       name: "home",
       patch: [
         {
-            type: "fixed",
+          type: "fixed",
           patchDetails: [
             {
               details:
@@ -21,9 +21,9 @@ const Version = {
               major: false,
             },
             {
-                details: "Fixed features section for mobile display.",
-                description: null,
-                major: false,
+              details: "Fixed features section for mobile display.",
+              description: null,
+              major: false,
             },
           ],
         },
@@ -33,7 +33,7 @@ const Version = {
       name: "Signup",
       patch: [
         {
-            type: "new",
+          type: "new",
           patchDetails: [
             {
               details: "New sign logic added (not OAUTH 2.0).",
@@ -45,19 +45,20 @@ const Version = {
               major: false,
             },
             {
-                details: "Added a email verification with code.",
-                description: null,
-                major: false,
+              details: "Added a email verification with code.",
+              description:
+                "previously the email can be whatever the user wanted it to be but with the with the gmail verfication the email has to be a vaild gmail for the user to continue sign up.",
+              major: true,
             },
           ],
-        }
+        },
       ],
     },
     {
       name: "chat",
       patch: [
         {
-            type: "new",
+          type: "new",
           patchDetails: [
             {
               details: "New background and chnage animation",
@@ -67,7 +68,7 @@ const Version = {
           ],
         },
         {
-            type: "change",
+          type: "change",
           patchDetails: [
             {
               details: "Removed the weather prompt",
@@ -82,7 +83,7 @@ const Version = {
           ],
         },
         {
-            type: "fixed",
+          type: "fixed",
           patchDetails: [
             {
               details:

@@ -31,26 +31,27 @@ const Patch=props=>{
         changeVersion(event.target.innerHTML)
         props.version(event.target.innerHTML);
     }
+    const patchMap=element=>
+    {
+        return <li key={element.version} className={element.version===process.env.REACT_APP_VERSION?"masterVersion":null} onClick={handlePreviousLinkClick}>
+                <p>{element.version}</p>
+        </li>
+    }
     return (
         <div className="patch-top-main">
             <div className="circle-1"></div>
             <div className="circle-2"></div>
-            <div>
+            <div className="patch-heading">
                 <h1>Patch Note </h1>
                 <h2>VERSION : {version}</h2>
             </div>
             <div className="prev-patch-div">
-                <h1>VIEW PREVIOUS PATCHES</h1>
+                <h1>VIEW All PATCHES</h1>
                 <div className="dropdown">
                     <i className="fas fa-caret-down" onClick={handleDropdownClick}></i>
                     <div className="dropdown-dropdown-menu" name="dropdownMenu" style={{display:"none"}}>
                         <ul>
-                            <li onClick={handlePreviousLinkClick}>
-                                <p >1.0.1</p>
-                            </li>
-                            <li onClick={handlePreviousLinkClick}>
-                               <p>1.0.0</p>
-                            </li>
+                            {props.allPatch.map(patchMap)}
                         </ul>
                     </div>
                 </div>

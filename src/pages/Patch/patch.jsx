@@ -5,14 +5,14 @@ import PatchNoteTop from "./component/patchNoteTop/patchNote-Comp";
 import PatchNoteSection from "./component/patchNoteSection/patchNoteSection";
 import Footer from "../../components/Footer/footer";
 
-import version1_0_0 from "./patches/1.0.0";
 import version1_0_1 from "./patches/1.0.1";
+import version1_0_0 from "./patches/1.0.0";
 
 const currentPatch=process.env.REACT_APP_VERSION;
 
 let patchArray=[];
-patchArray.push(version1_0_0);
 patchArray.push(version1_0_1);
+patchArray.push(version1_0_0);
 
 const findPatch=(Ver)=>{
     for (let i = 0; i < patchArray.length; i++) {
@@ -36,7 +36,7 @@ const Patch=props=>{
         <div>
             <Navbar/>
             <div name="top-div">
-                <PatchNoteTop version={onVersion} defVersion={process.env.REACT_APP_VERSION}/>
+                <PatchNoteTop version={onVersion} defVersion={process.env.REACT_APP_VERSION} allPatch={patchArray}/>
                 <div className="patch-note-details">
                     <PatchNoteSection patch={patch}/>
                 </div>

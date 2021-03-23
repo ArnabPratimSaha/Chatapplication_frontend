@@ -1,7 +1,9 @@
 import react, { useEffect, useState } from "react";
 import "./patchnote.css";
+
 import Heading from "../patchHeading/heading";
 import Body from "../patchBody/Body";
+import Massage from "../patchnoteMassage/massgae";
 
 const Patch=props=>{
     const [patch,changePatch]=useState(props.patch);
@@ -25,7 +27,10 @@ const Patch=props=>{
                         const type=oldType;
                         oldType=e.type;
                         
-                        return <Body key={details.details} newClass={type!=e.type && "gap"} type={e.type} body={details.details} isMajor={details.major} />
+                        return <div key={details.details}>
+                            <Body newClass={type!=e.type && "gap"} type={e.type} body={details.details} isMajor={details.major} />
+                            {(details.description!=undefined || details.description!=null)?<Massage massage={details.description}/>:null}
+                        </div>
                     })
                 })}
             </div>
